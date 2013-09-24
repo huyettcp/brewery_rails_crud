@@ -8,3 +8,7 @@ gem 'pg'
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
 end
+
+group :assets do
+  gem 'uglifier', '>= 1.0.3'
+end
