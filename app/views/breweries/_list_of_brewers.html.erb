@@ -1,0 +1,4 @@
+<p> Our Collection of Existing Brewers</p>
+  <% @breweries.each do |brewery| %>
+    <a href="/breweries/<%= brewery.id %>"><%= brewery.name %></a>
+  <% end %>

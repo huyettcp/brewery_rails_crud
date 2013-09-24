@@ -1,0 +1,17 @@
+<form action='/breweries/<%= @brewery.id %>/add_beer' method='post'>
+    <div>
+    <label>Name</label>
+    <input name='beers[beer_name]' type='text'/>
+  </div>
+  <div>
+    <label>Alcohol Volume</label>
+    <input name='beers[a_b_v]' type='text'/>
+  </div>
+  <div>
+    <label>Style of Beer</label>
+    <input name='beers[style]' type='text'/>
+  </div>
+  <input type='submit'/>
+</form>
+
+<a href="/breweries">Brewery Index</a>

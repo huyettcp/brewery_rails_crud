@@ -1,0 +1,19 @@
+<ul>
+
+  <% @breweries.each do |brewery| %>
+    <li><%= brewery.name %></li>
+    <li><%= brewery.city %></li>
+    <li><%= brewery.state %></li>
+    <a href="/breweries/<%= brewery.id %>">Edit</a>
+  <% end %>
+
+    <% @beers.each do |beer| %>
+    <li><%= beer.beer_name %></li>
+  <% end %>
+
+</ul>
+
+<a href="/breweries/new">Add Brewery</a>
+
+<%= render "list_of_brewers" %>
+

@@ -1,0 +1,17 @@
+<form action='/breweries/<%= @brewery.id %>/update' method='post'>
+  <div>
+    <label>Name</label>
+    <input name='brewery[name]' type='text' value='<%= @brewery.name %>'/>
+  </div>
+  <div>
+    <label>City</label>
+    <input name='brewery[city]' type='text' value='<%= @brewery.city %>'/>
+  </div>
+  <div>
+    <label>State</label>
+    <input name='brewery[state]' type='text' value='<%= @brewery.state %>'/>
+  </div>
+  <input type='submit'/>
+</form>
+
+<a href="/breweries">Brewery Index</a>

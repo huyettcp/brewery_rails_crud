@@ -1,0 +1,9 @@
+<div>
+  <strong><%= @brewery.name %></strong>
+  <p>Located in <%= @brewery.city %>, <%= @brewery.state %></p>
+</div>
+
+<form action='/breweries/<%= @brewery.id %>/delete' method='post'>
+  <button>Delete</button>
+</form>
+<a href='/breweries/<%= @brewery.id %>/edit' method='post'>Update</a>
